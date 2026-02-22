@@ -9,10 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="AST\" />
-      <Folder Include="Compiler\" />
-      <Folder Include="Lexer\" />
-      <Folder Include="Parser\" />
+      <PackageReference Include="OmniSharp.Extensions.LanguageServer" Version="0.19.9" />
     </ItemGroup>
 
 </Project>

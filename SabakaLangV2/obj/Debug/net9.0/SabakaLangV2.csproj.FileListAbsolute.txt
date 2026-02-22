@@ -1,0 +1,15 @@
+D:\SabakaLangV2\SabakaLangV2\bin\Debug\net9.0\SabakaLangV2.exe
+D:\SabakaLangV2\SabakaLangV2\bin\Debug\net9.0\SabakaLangV2.deps.json
+D:\SabakaLangV2\SabakaLangV2\bin\Debug\net9.0\SabakaLangV2.runtimeconfig.json
+D:\SabakaLangV2\SabakaLangV2\bin\Debug\net9.0\SabakaLangV2.dll
+D:\SabakaLangV2\SabakaLangV2\bin\Debug\net9.0\SabakaLangV2.pdb
+D:\SabakaLangV2\SabakaLangV2\obj\Debug\net9.0\SabakaLangV2.GeneratedMSBuildEditorConfig.editorconfig
+D:\SabakaLangV2\SabakaLangV2\obj\Debug\net9.0\SabakaLangV2.AssemblyInfoInputs.cache
+D:\SabakaLangV2\SabakaLangV2\obj\Debug\net9.0\SabakaLangV2.AssemblyInfo.cs
+D:\SabakaLangV2\SabakaLangV2\obj\Debug\net9.0\SabakaLangV2.csproj.CoreCompileInputs.cache
+D:\SabakaLangV2\SabakaLangV2\obj\Debug\net9.0\SabakaLangV2.sourcelink.json
+D:\SabakaLangV2\SabakaLangV2\obj\Debug\net9.0\SabakaLangV2.dll
+D:\SabakaLangV2\SabakaLangV2\obj\Debug\net9.0\refint\SabakaLangV2.dll
+D:\SabakaLangV2\SabakaLangV2\obj\Debug\net9.0\SabakaLangV2.pdb
+D:\SabakaLangV2\SabakaLangV2\obj\Debug\net9.0\SabakaLangV2.genruntimeconfig.cache
+D:\SabakaLangV2\SabakaLangV2\obj\Debug\net9.0\ref\SabakaLangV2.dll

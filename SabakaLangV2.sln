@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SabakaLangV2", "SabakaLangV2\SabakaLangV2.csproj", "{40EF16B4-3751-4955-AD5E-167848085BE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SabakaLangV2.VM", "SabakaLangV2.VM\SabakaLangV2.VM.csproj", "{4B38D4B7-DCD3-4589-A7E7-5CA82D9C38FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SabakaLangV2.LSP", "SabakaLangV2.LSP\SabakaLangV2.LSP.csproj", "{A9176B57-EAAD-435D-9941-7A48C8C392D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SabakaLangV2.EXE", "SabakaLangV2.EXE\SabakaLangV2.EXE.csproj", "{15C0057B-6978-4711-BFB7-9678AE0E562C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{40EF16B4-3751-4955-AD5E-167848085BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40EF16B4-3751-4955-AD5E-167848085BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40EF16B4-3751-4955-AD5E-167848085BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B38D4B7-DCD3-4589-A7E7-5CA82D9C38FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B38D4B7-DCD3-4589-A7E7-5CA82D9C38FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B38D4B7-DCD3-4589-A7E7-5CA82D9C38FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B38D4B7-DCD3-4589-A7E7-5CA82D9C38FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9176B57-EAAD-435D-9941-7A48C8C392D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9176B57-EAAD-435D-9941-7A48C8C392D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9176B57-EAAD-435D-9941-7A48C8C392D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9176B57-EAAD-435D-9941-7A48C8C392D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C0057B-6978-4711-BFB7-9678AE0E562C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C0057B-6978-4711-BFB7-9678AE0E562C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C0057B-6978-4711-BFB7-9678AE0E562C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C0057B-6978-4711-BFB7-9678AE0E562C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

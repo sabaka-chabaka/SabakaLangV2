@@ -8,11 +8,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="AST\" />
-      <Folder Include="Compiler\" />
-      <Folder Include="Lexer\" />
-      <Folder Include="Parser\" />
-    </ItemGroup>
-
 </Project>
