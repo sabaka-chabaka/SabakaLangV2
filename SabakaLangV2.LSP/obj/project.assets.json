@@ -633,6 +633,16 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "SabakaLangV2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/SabakaLangV2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SabakaLangV2.dll": {}
+        }
       }
     }
   },
@@ -1589,11 +1599,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "SabakaLangV2/1.0.0": {
+      "type": "project",
+      "path": "../SabakaLangV2/SabakaLangV2.csproj",
+      "msbuildProject": "../SabakaLangV2/SabakaLangV2.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "OmniSharp.Extensions.LanguageServer >= 0.19.9"
+      "OmniSharp.Extensions.LanguageServer >= 0.19.9",
+      "SabakaLangV2 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1620,7 +1636,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\SabakaLangV2\\SabakaLangV2\\SabakaLangV2.csproj": {
+              "projectPath": "D:\\SabakaLangV2\\SabakaLangV2\\SabakaLangV2.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

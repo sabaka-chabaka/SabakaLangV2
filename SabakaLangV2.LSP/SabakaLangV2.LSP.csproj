@@ -11,5 +11,8 @@
     <ItemGroup>
       <PackageReference Include="OmniSharp.Extensions.LanguageServer" Version="0.19.9" />
     </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\SabakaLangV2\SabakaLangV2.csproj" />
+    </ItemGroup>
 
 </Project>

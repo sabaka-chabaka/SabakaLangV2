@@ -8,4 +8,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+
+    <ItemGroup>
+        <ProjectReference Include="..\SabakaLangV2\SabakaLangV2.csproj" />
+    </ItemGroup>
+
 </Project>

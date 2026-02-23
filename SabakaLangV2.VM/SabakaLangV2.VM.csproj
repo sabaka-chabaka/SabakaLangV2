@@ -9,4 +9,8 @@
         <RootNamespace>SabakaLang.VM</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SabakaLangV2\SabakaLangV2.csproj" />
+    </ItemGroup>
+
 </Project>
