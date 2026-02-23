@@ -45,7 +45,7 @@ public enum TokenType
 
     // Object / OOP
     KeywordThis,
-    KeywordBase,
+    KeywordSuper,
     KeywordNew,
 
     // Access modifiers
