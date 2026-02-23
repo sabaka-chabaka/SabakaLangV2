@@ -12,7 +12,6 @@
       <Folder Include="AST\" />
       <Folder Include="Compiler\" />
       <Folder Include="Exceptions\" />
-      <Folder Include="Lexer\" />
       <Folder Include="Parser\" />
       <Folder Include="Types\" />
     </ItemGroup>
