@@ -86,6 +86,9 @@ public class Parser
 
         if (Match(TokenType.LeftBrace))
             return ParseBlock();
+        
+        if (IsTypeKeyword(Current.Type) && Peek(1).Type == TokenType.Identifier && Peek(2).Type == TokenType.LeftParen)
+            return ParseFunction();
 
         return ParseExpressionStatement();
     }
@@ -368,5 +371,39 @@ public class Parser
             TokenType.PercentEqual => TokenType.Percent,
             _ => throw new Exception("Not a compound assignment")
         };
+    }
+    
+    private FunctionDeclaration ParseFunction()
+    {
+        var returnType = Advance();
+        var name = Expect(TokenType.Identifier);
+
+        Expect(TokenType.LeftParen);
+
+        var parameters = new List<Parameter>();
+
+        if (!Match(TokenType.RightParen))
+        {
+            do
+            {
+                var type = Advance();
+                var paramName = Expect(TokenType.Identifier);
+
+                parameters.Add(new Parameter(type.Lexeme, paramName.Lexeme));
+
+            } while (Match(TokenType.Comma));
+
+            Expect(TokenType.RightParen);
+        }
+
+        var body = (BlockStatement)ParseStatement();
+
+        return new FunctionDeclaration(
+            returnType.Lexeme,
+            name.Lexeme,
+            parameters,
+            body,
+            returnType.Line,
+            returnType.Column);
     }
 }
