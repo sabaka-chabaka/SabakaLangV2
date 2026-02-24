@@ -11,3 +11,15 @@ public abstract class Node
         Column = column;
     }
 }
+
+public abstract class Expression : Node
+{
+    protected Expression(int line, int column)
+        : base(line, column) { }
+}
+
+public abstract class Statement : Node
+{
+    protected Statement(int line, int column)
+        : base(line, column) { }
+}

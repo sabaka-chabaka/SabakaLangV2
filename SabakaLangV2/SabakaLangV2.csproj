@@ -10,7 +10,6 @@
 
     <ItemGroup>
       <Folder Include="AST\Declarations\" />
-      <Folder Include="AST\Expressions\" />
       <Folder Include="AST\Statements\" />
       <Folder Include="Compiler\" />
       <Folder Include="Parser\" />
