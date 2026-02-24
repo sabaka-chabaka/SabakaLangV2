@@ -9,10 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="AST\Declarations\" />
-      <Folder Include="AST\Statements\" />
       <Folder Include="Compiler\" />
-      <Folder Include="Parser\" />
       <Folder Include="Types\" />
     </ItemGroup>
 
