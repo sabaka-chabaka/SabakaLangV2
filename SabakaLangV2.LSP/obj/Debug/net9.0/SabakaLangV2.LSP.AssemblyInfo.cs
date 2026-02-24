@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SabakaLangV2.LSP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+241eee823cdf2f91f54d32f0e7ae99c58e94cb15")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b240bf5e6b9d53253625a741baa2b4e5c396657c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SabakaLangV2.LSP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SabakaLangV2.LSP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
