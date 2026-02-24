@@ -197,29 +197,49 @@ public class Parser
     {
         Expression left = ParseUnary();
 
-        // ===============================
-        // ASSIGN (right associative)
-        // ===============================
+        // ====================================
+        // ASSIGN & COMPOUND ASSIGN
+        // ====================================
 
-        if (Match(TokenType.Equal))
+        if (IsAssignmentOperator(Current.Type))
         {
-            var equalsToken = _tokens[_position - 1];
+            var opToken = Advance();
 
             if (!IsAssignable(left))
                 throw new Exception("Invalid assignment target");
 
             var right = ParseExpression();
 
+            // simple =
+            if (opToken.Type == TokenType.Equal)
+            {
+                return new AssignmentExpression(
+                    left,
+                    right,
+                    opToken.Line,
+                    opToken.Column);
+            }
+
+            // compound
+            var binaryOperator = GetBinaryFromCompound(opToken.Type);
+
+            var binary = new BinaryExpression(
+                left,
+                binaryOperator,
+                right,
+                opToken.Line,
+                opToken.Column);
+
             return new AssignmentExpression(
                 left,
-                right,
-                equalsToken.Line,
-                equalsToken.Column);
+                binary,
+                opToken.Line,
+                opToken.Column);
         }
 
-        // ===============================
+        // ====================================
         // BINARY
-        // ===============================
+        // ====================================
 
         while (true)
         {
@@ -325,5 +345,28 @@ public class Parser
     private bool IsAssignable(Expression expr)
     {
         return expr is IdentifierExpression;
+    }
+    
+    private bool IsAssignmentOperator(TokenType type)
+    {
+        return type == TokenType.Equal
+               || type == TokenType.PlusEqual
+               || type == TokenType.MinusEqual
+               || type == TokenType.StarEqual
+               || type == TokenType.SlashEqual
+               || type == TokenType.PercentEqual;
+    }
+    
+    private TokenType GetBinaryFromCompound(TokenType type)
+    {
+        return type switch
+        {
+            TokenType.PlusEqual => TokenType.Plus,
+            TokenType.MinusEqual => TokenType.Minus,
+            TokenType.StarEqual => TokenType.Star,
+            TokenType.SlashEqual => TokenType.Slash,
+            TokenType.PercentEqual => TokenType.Percent,
+            _ => throw new Exception("Not a compound assignment")
+        };
     }
 }
