@@ -24,9 +24,7 @@ public enum TokenType
     // ========================
 
     // Declarations
-    KeywordVar,
     KeywordConst,
-    KeywordFunc,
     KeywordReturn,
     KeywordClass,
     KeywordStruct,
@@ -58,6 +56,13 @@ public enum TokenType
     KeywordTrue,
     KeywordFalse,
     KeywordNull,
+    
+    // Type keywords
+    KeywordInt,
+    KeywordFloat,
+    KeywordBool,
+    KeywordString,
+    KeywordVoid,
 
     // ========================
     // === Operators ==========
@@ -124,4 +129,10 @@ public enum TokenType
     Colon,              // :
     DoubleColon,        // ::
     Question,           // ?
+    
+    // ========================
+    // === Built-In funcs =====
+    // ========================
+    Print,
+    Input
 }
