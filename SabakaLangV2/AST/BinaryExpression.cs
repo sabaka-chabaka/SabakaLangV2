@@ -1,6 +1,6 @@
 using SabakaLangV2.Lexer;
 
-namespace SabakaLangV2.AST.Expressions;
+namespace SabakaLangV2.AST;
 
 public class BinaryExpression : Expression
 {
